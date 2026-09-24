@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | E-commerce product page</title>
+  <link rel="stylesheet" href="style.css">
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution { font-size: 1rem; text-align: center; }
+    .attribution a { color: hsl(26, 100%, 55%); }
+  </style>
+</head>
+<body>
+
+
+  <!-- #-----------header ------------ #-->
+  <header>
+    <button class="menu-button" aria-label="Open menu" aria-expanded="false" aria-controls="mobile-side-menu">
+      <img src="images/icon-menu.svg" alt="">
+    </button> 
+
+    <!-- ##--- the logo ---## -->
+    <p class="logo">sneakers</p>
+    <div class="mobile-overlay"></div>
+    <!-- ##--- nav sections ---## -->
+    <nav id="mobile-side-menu">
+      <button class="nav-close" aria-label="Close menu">
+        <img src="images/icon-close.svg" alt="">
+      </button> 
+
+      <a href="#">Collections</a>
+      <a href="#">Men</a>
+      <a href="#">Women</a>
+      <a href="#">About</a>
+      <a href="#">Contact</a>
+    </nav>
+    
+    <!-- ##--- cart and avater ---## -->
+    <div class="header-con">
+
+      
+      <!-- ###-- cart button --### -->
+       <div class="cart-trigger">
+        <button aria-label="Open cart" class="open-cart" aria-expanded="false" aria-controls="cart-dropdown">
+          <img src="images/icon-cart.svg" alt="">
+        </button>
+        
+
+        <!-- ###-- cart items conter--### -->
+        <span class="cart-count" hidden>0</span>
+      </div>
+      <!-- ###-- cart bropdown --### --> <!-- @hiddin -->
+      <div class="cart-dropdown" id="cart-dropdown" hidden>
+        <h2>Cart</h2>
+        <p class="empty-cart-message">Your cart is empty.</p>
+      </div>
+      
+      <!-- ###-- uesr -->
+      <img class="avatar" src="images/image-avatar.png" alt="user-avatar">
+    </div>
+  </header>
+
+
+  <!-- #-------------- main contant -------------# -->
+  <main>
+
+    <!-- ##---- product images in left side ---## -->
+    <section class="product-imges">
+
+      <!-- ###-- the full image continer --### -->
+      <div class="bigimg-con">
+        <button class="main-image" aria-label="View product image">
+          <img src="images/image-product-1.jpg" alt="sneakers image">
+        </button>
+      <button class="mobile-previous" aria-label="Previous image">‹</button>
+      <button class="mobile-next" aria-label="Next image">›</button>
+      </div>
+      <!-- ###-- thumbnail images continer (the smaill images) --### -->
+      <div class="smallimg-con">
+        <button data-index="0"><img src="images/image-product-1-thumbnail.jpg" alt="product image 1"></button>
+        <button data-index="1"><img src="images/image-product-2-thumbnail.jpg" alt="product image 2"></button>
+        <button data-index="2"><img src="images/image-product-3-thumbnail.jpg" alt="product image 3"></button>
+        <button data-index="3"><img src="images/image-product-4-thumbnail.jpg" alt="product image 4"></button>
+      </div>
+
+    </section>
+
+    <!-- ##---- the product detals on the right side ---## -->
+    <section class="product-detels">
+
+      <!-- ###-- product detals continer --### -->
+      <div class="product-detels-con">
+        <p class="Company-name">Sneaker Company</p>
+        <h1>Fall Limited Edition Sneakers</h1>
+        <p>These low-profile sneakers are your perfect casual wear companion. Featuring a durable rubber outer sole, they’ll withstand everything the weather can offer.</p>
+        <!-- #### price and discont continer #### -->
+        <div class="discont-con">
+          <p class="price">$125.00<span>50%</span></p>
+          <p class="old-price">$250.00</p>
+        </div>
+      </div>
+
+      <!-- ###-- items in cart continer --### -->
+      <div class="cart-detels-con">
+        <div class="quantity-box"><button class="plas-m minusButton" aria-label="remove one item from cart">-</button><p class="quantityDisplay">0</p><button class="plas-m plusButton" aria-label="add one item to cart">+</button></div>
+        <button class="add" aria-label="add to cart">Add to cart</button>
+      </div>
+    </section>
+
+    <!-- ##---- lightbox continer ----## -->
+    <dialog id="lightbox">
+      <button aria-label="Close image viewer" class="lightbox-close">x</button>
+      <button aria-label="Previous image" class="lightbox-previous">‹</button>
+      <img src="images/image-product-1.jpg" alt="Product image" id="lightbox-image">
+      <button aria-label="Next image" class="lightbox-next">›</button>
+    </dialog>
+  </main>
+
+  <!-- ---------- footer -------------- -->
+  <footer class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge">Frontend Mentor</a>. 
+    Coded by <a href="https://msite.nichesite.org/?i=1">M</a>.
+  </footer>
+  
+  
+  
+  <!-- --------------js -----------  -->
+  <script src="app.js" defer></script>
+</body>
+</html>
