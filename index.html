@@ -19,18 +19,18 @@
 
   <!-- #-----------header ------------ #-->
   <header>
-    <button class="menu-button" type="button" aria-label="Open menu" aria-expanded="false" aria-controls="mobile-side-menu">
+    <button  class="menu-button " aria-label="Open menu" type="button " aria-expanded="false" aria-controls="mobile-side-menu">
       <img src="images/icon-menu.svg" alt="">
-    </button> 
+    </button > 
 
     <!-- ##--- the logo ---## -->
     <p class="logo">sneakers</p>
     <div class="mobile-overlay"></div>
     <!-- ##--- nav sections ---## -->
     <nav id="mobile-side-menu">
-      <button class="nav-close" aria-label="Close menu">
+      <button  class="nav-close" aria-label="Close menu" type="button">
         <img src="images/icon-close.svg" alt="">
-      </button> 
+      </button > 
 
       <a href="#">Collections</a>
       <a href="#">Men</a>
@@ -43,11 +43,11 @@
     <div class="header-con">
 
       
-      <!-- ###-- cart button --### -->
+      <!-- ###-- cart button  --### -->
        <div class="cart-trigger">
-        <button aria-label="Open cart" class="open-cart" aria-expanded="false" aria-controls="cart-dropdown">
+        <button type="button" aria-label="Open cart" class="open-cart" aria-expanded="false" aria-controls="cart-dropdown">
           <img src="images/icon-cart.svg" alt="">
-        </button>
+        </button >
         
 
         <!-- ###-- cart items conter--### -->
@@ -73,18 +73,18 @@
 
       <!-- ###-- the full image continer --### -->
       <div class="bigimg-con">
-        <button class="main-image" aria-label="View product image">
+        <button  type="button" class="main-image" aria-label="View product image">
           <img src="images/image-product-1.jpg" alt="sneakers image">
-        </button>
-      <button class="mobile-previous" aria-label="Previous image">‹</button>
-      <button class="mobile-next" aria-label="Next image">›</button>
+        </button >
+      <button type="button" class="mobile-previous" aria-label="Previous image">‹</button >
+      <button type="button" class="mobile-next" aria-label="Next image">›</button >
       </div>
       <!-- ###-- thumbnail images continer (the smaill images) --### -->
       <div class="smallimg-con">
-        <button data-index="0"><img src="images/image-product-1-thumbnail.jpg" alt="product image 1"></button>
-        <button data-index="1"><img src="images/image-product-2-thumbnail.jpg" alt="product image 2"></button>
-        <button data-index="2"><img src="images/image-product-3-thumbnail.jpg" alt="product image 3"></button>
-        <button data-index="3"><img src="images/image-product-4-thumbnail.jpg" alt="product image 4"></button>
+        <button  data-index="0"><img src="images/image-product-1-thumbnail.jpg" alt="product image 1"></button >
+        <button  data-index="1"><img src="images/image-product-2-thumbnail.jpg" alt="product image 2"></button >
+        <button  data-index="2"><img src="images/image-product-3-thumbnail.jpg" alt="product image 3"></button >
+        <button  data-index="3"><img src="images/image-product-4-thumbnail.jpg" alt="product image 4"></button >
       </div>
 
     </section>
@@ -106,17 +106,21 @@
 
       <!-- ###-- items in cart continer --### -->
       <div class="cart-detels-con">
-        <div class="quantity-box"><button class="plas-m minusButton" aria-label="remove one item from cart">-</button><p class="quantityDisplay">0</p><button class="plas-m plusButton" aria-label="add one item to cart">+</button></div>
-        <button class="add" aria-label="add to cart">Add to cart</button>
+        <div class="quantity-box">
+          <button type="button" class="plas-m minusButton " aria-label="remove one item from cart">-</button >
+            <p class="quantityDisplay">0</p>
+          <button type="button" class="plas-m plusButton " aria-label="add one item to cart">+</button >
+        </div>
+        <button type="button" class="add" aria-label="add to cart">Add to cart</button >
       </div>
     </section>
 
     <!-- ##---- lightbox continer ----## -->
     <dialog id="lightbox">
-      <button aria-label="Close image viewer" class="lightbox-close">x</button>
-      <button aria-label="Previous image" class="lightbox-previous">‹</button>
+      <button type="button" aria-label="Close image viewer" class="lightbox-close">x</button >
+      <button type="button" aria-label="Previous image" class="lightbox-previous">‹</button >
       <img src="images/image-product-1.jpg" alt="Product image" id="lightbox-image">
-      <button aria-label="Next image" class="lightbox-next">›</button>
+      <button type="button" aria-label="Next image" class="lightbox-next">›</button >
     </dialog>
   </main>
 
